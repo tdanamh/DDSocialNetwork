@@ -1,0 +1,38 @@
+
+input[type="file"] {
+    display: none;
+}
+input[type="submit"] {
+    display: none;
+}
+.changeProfilePicture {
+    height: 30px;
+    display: flex;
+    padding: 15px;
+}
+.custom-file-upload {
+    position: absolute;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: monospace;
+    border: 0.5px solid #dddfe2;
+    background-color: #f5f6f7;
+    font-weight: 600;
+    font-weight: 600;
+    color: #365899;
+    text-align: center;
+    padding: 5px;
+}
+.custom-file-submit {
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: monospace;
+    border: 0.5px solid #dddfe2;
+    background-color: #f5f6f7;
+    font-weight: 600;
+    color: #365899;
+    text-align: center;
+    padding: 5px;
+ }

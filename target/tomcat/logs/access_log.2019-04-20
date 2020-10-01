@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:23:00:17 +0300] "GET /spring5-webmvc-demo HTTP/1.1" 302 - http-bio-9000-exec-1 0
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:23:00:17 +0300] "GET /spring5-webmvc-demo/ HTTP/1.1" 200 2201 http-bio-9000-exec-3 59
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:23:00:17 +0300] "GET /spring5-webmvc-demo/style.css HTTP/1.1" 304 - http-bio-9000-exec-4 10
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:23:00:17 +0300] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9000-exec-5 0

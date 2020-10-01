@@ -1,0 +1,651 @@
+body {
+    margin: 0;
+    background-color: #eeeeef;
+    background-image: url(network.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+}
+
+.loginFormContainer{
+    position: absolute;
+    right: 50px;
+}
+
+
+#loginButton {
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid #bdbbbb;
+    border-radius: 10px;
+}
+
+#loginButton:hover {
+    cursor: pointer;
+}
+
+#email, #password {
+    border: 1px solid #bdbbbb;
+    border-radius: 10px;
+}
+
+.loginLabel {
+    font-family: monospace;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.topBar{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(58, 64, 86);
+    position: fixed;
+    min-width: 920px;
+}
+
+#mainView {
+    padding: 40px 0;
+    display: flex;
+    min-width: 825px;
+}
+
+.registerFormContainer{
+    width: 50%;
+    padding: 110px;
+}
+
+#registerForm{
+    display: inline-grid;
+}
+
+.registerText{
+    font-weight: 100;
+}
+
+#registerEmail, #registerPassword {
+    width: 305px;
+}
+
+#firstName, #lastName, #registerEmail, #registerPassword{
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #bdbbbb;
+}
+
+#firstName, #lastName{
+    width: 150px;
+}
+
+::placeholder{
+    opacity: 1;
+    font-size: 15px;
+}
+
+#registerButton {
+    height: 30px;
+    width: 150px;
+    background-color: #d6ddf5;
+    border: 1px solid #bdbbbb;
+    border-radius: 7px;
+}
+
+#registerButton:hover{
+    cursor: pointer;
+}
+
+#userGenre{
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+
+.headingTextContainer{
+    min-width: 300px;
+    position: absolute;
+    left: 10px;
+}
+.headingTextContainer:hover{
+    cursor:pointer;
+}
+
+.headingText {
+    font-weight: 100;
+    font-family: monospace;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.aboutContainer {
+    width: 50%;
+    padding: 200px;
+    min-width: 300px;
+}
+
+.about {
+    padding: 10px;
+    font-size: 20px;
+    color: #425d42;
+}
+
+.registerError {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: red;
+}
+
+.loginError{
+    color: #900000;
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.settingsPanelText {
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+#settingsPanel {
+    width: 270px;
+    position: fixed;
+    padding: 10px;
+    height: 100%;
+}
+
+#newsFeedPanel {
+    width: 70%;
+    margin-right: 50px;
+    margin-left: 290px;
+}
+
+.addPost {
+    background-color: white;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+.feed {
+    background-color: white;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+.feedTextAuthor {
+    padding: 5px;
+    color: #365899;
+    font-family: monospace;
+}
+
+.feedText,
+.feedLikes,
+.feedComments{
+    padding: 5px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.feedLikes,
+.feedComments {
+    margin: 0;
+}
+
+.postInfo{
+    display: flex;
+}
+
+.newPostText {
+    padding: 5px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 13px;
+    background-color: #d6ddf5;
+    border: 1px solid #ece8e8;
+    margin-bottom: 0;
+}
+
+.feedTextTime {
+    padding: 0 5px;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 100;
+    color: grey;
+    margin-top: -20px;
+}
+
+.newsOption {
+    padding: 0 5px;
+    border-top: 1px solid lightgray;
+}
+
+.newsLikeButton{
+    background-image: url(like.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    background-color: transparent;
+    background-size: contain;
+}
+
+.newsCommentButton{
+    background-image: url(comment.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    width: 125px;
+    background-color: transparent;
+    background-size: 25px;
+    background-position-y: center;
+    background-position-x: left;
+}
+
+.newsLikeButton:hover,
+.newsCommentButton:hover{
+    cursor: pointer;
+    background-color: #fbfbfb;
+}
+
+.comments {
+    text-align: center;
+    display: none;
+}
+
+.comments textarea {
+    overflow: hidden;
+    margin: auto;
+    height: 35px;
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    border-color: lightgrey;
+}
+
+.comments textarea::placeholder{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.textareaContainer textarea {
+    border: none;
+    width: 100%;
+    resize: none;
+}
+
+.textareaContainer {
+    padding: 10px;
+}
+
+.postOption {
+    padding: 0 5px;
+    border-top: 1px solid lightgray;
+}
+
+.postButton {
+    background-image: url(post.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 100px;
+    background-color: transparent;
+    height: 35px;
+}
+
+.postButton:hover{
+    cursor: pointer;
+    background-color: #fbfbfb;
+}
+
+.eachComment {
+    margin: 5px;
+    display: flex;
+    text-align: left;
+    background-color: #f2f3f5;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+.commentAuthor,
+.commentText,
+.commentTime{
+    font-family: monospace;
+}
+
+.commentAuthor {
+    color: #365899;
+    margin-bottom: 0;
+}
+
+.commentText {
+    padding: 0 5px;
+    font-weight: 100;
+}
+
+.commentTime{
+    margin-top: 0;
+    font-weight: 100;
+    color: grey;
+}
+
+.commentsList {
+    padding: 5px;
+}
+
+.youMayKnowText {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+#peopleList {
+    padding: 0;
+    display: block;
+    list-style-type: none;
+}
+
+#peopleYouMayKnowContainer {
+    border: 0.5px solid #dddfe2;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.peopleName {
+    font-size: 12px;
+    color: #365899;
+    font-family: monospace;
+}
+.peopleName:hover {
+    cursor: pointer;
+}
+
+.people {
+    display: flex;
+}
+
+.addFriendButton {
+    font-size: 12px;
+    font-family: monospace;
+    height: 25px;
+    border: 0.5px solid #dddfe2;
+    background-color: #f5f6f7;
+    font-weight: 600;
+    color: #365899;
+}
+
+.acceptButton {
+    position: absolute;
+    right: 10%;
+    font-size: 12px;
+    font-family: monospace;
+    height: 25px;
+    border: 0.5px solid #dddfe2;
+    background-color: #f5f6f7;
+    font-weight: 600;
+    color: #365899;
+}
+
+.addButtonContainer {
+    width: 50%;
+
+}
+
+.peopleInfo {
+    width: 50%;
+}
+
+#notificationsContainer {
+    width: 450px;
+    height: 70%;
+    background: #ffffff;
+    z-index: 1;
+    right: 10%;
+    border-radius: 5px;
+    border: 0.5px solid #dddfe2;
+    overflow-y: scroll;
+    position: fixed;
+    display: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.notificationsHeadingText{
+    padding: 5px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 13px;
+    background-color: #d6ddf5;
+    border: 1px solid #ece8e8;
+    margin: 0;
+}
+
+.notification {
+    background-color: aliceblue;
+    border-bottom: 0.5px solid #dddfe2;
+    list-style-type: none;
+    padding: 20px 5px;
+    display: flex;
+}
+
+#notificationsList {
+    margin: 0;
+    padding: 0;
+}
+
+.notificationText {
+    margin: 0;
+    font-family: monospace;
+    font-size: 14px;
+    width: 45%;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.topBarFeatures {
+    position: absolute;
+    right: 10%;
+    padding: 3px;
+}
+
+.topBarFeatures img {
+    border-radius: 5px;
+}
+
+.topBarFeatures img:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #2b4d69;
+}
+
+.searchContainer {
+    left: 300px;
+    padding: 10px;
+    position: absolute;
+}
+
+.searchContainer input {
+    border: none;
+    border-radius: 2px;
+    width: 450px;
+    height: 24px;
+}
+
+#searchResultsContainer {
+    width: 450px;
+    height: 70%;
+    background: #ffffff;
+    z-index: 1;
+    left: 310px;
+    border-radius: 5px;
+    border: 0.5px solid #dddfe2;
+    overflow-y: scroll;
+    position: fixed;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    display: none;
+}
+
+#friendsContainer {
+    width: 300px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 400px;
+    background: #ffffff;
+    z-index: 1;
+    border-radius: 5px;
+    border: 0.5px solid #dddfe2;
+    overflow-y: scroll;
+    position: fixed;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    display: none;
+}
+
+#resultsList {
+    margin: 0;
+    padding: 0;
+}
+
+.result {
+    background-color: aliceblue;
+    border-bottom: 0.5px solid #dddfe2;
+    list-style-type: none;
+    padding: 0 5px;
+    display: flex;
+}
+
+.result:hover{
+    cursor:pointer;
+}
+
+#searchField {
+    padding: 0 5px;
+}
+
+.settingsOption:hover{
+    background-color: #f5f6f7;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.friendsHeadingText {
+    padding: 5px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 13px;
+    background-color: #d6ddf5;
+    border: 1px solid #ece8e8;
+    margin: 0;
+}
+
+#friends {
+    margin: 0;
+    padding: 0;
+}
+
+.friend {
+    background-color: white;
+    border-bottom: 0.5px solid #dddfe2;
+    list-style-type: none;
+    padding: 0 5px;
+    display: flex;
+}
+
+.friend-info {
+    width: 60%;
+}
+
+.friend-info:hover {
+    cursor:pointer;
+}
+
+.friendName {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 14px;
+    text-decoration: none;
+    color: #365899;
+}
+
+.deleteFriend {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.deleteFriendButton {
+    font-size: 12px;
+    font-family: monospace;
+    height: 25px;
+    border: 0.5px solid #dddfe2;
+    background-color: #f5f6f7;
+    font-weight: 600;
+    color: #365899;
+}
+
+.logOutContainer {
+    padding: 5px;
+    position: absolute;
+    right: 1%;
+}
+
+#logOutButton {
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+    border: 1px solid #bbb4b4;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+#logOutButton:hover {
+    cursor: pointer;
+}
+
+.profilePicture img{
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+}
+.username,.profilePicture,.registerDate,.gender,.noFriends {
+    margin: 5px;
+}
+.settingsText {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 0;
+    text-decoration: none;
+    color: #365899;
+    margin-left: 15px;
+}
